@@ -60,29 +60,54 @@ header {
   font-family: Heiti SC,sans-serif;
   display: flex;
   flex: 1;
+  flex-direction: column;
+}
+@media screen and (min-width: 30em) {
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
 }
 /*-------Aside----------*/
 aside {
   display: flex;
   background-color: #f7ca45;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
-  width: 25%;
+  width: 100%;
+}
+@media screen and (min-width: 30em) {
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 .links {
-  margin: 50px 20px 0 20px;
+  display: flex;
+}
+@media screen and (min-width: 30em) {
+  .links {
+    flex-direction: column;
+  }
 }
 .links li{
   color: #ffffff;
-  margin: 50px;
+  margin: 20px;
 }
 aside .fa:hover {
   color: #808080;
 }
 aside .fa  {
-  font-size: 50px;
+  font-size: 30px;
   color: #ffffff;
+}
+@media screen and (min-width: 30em) {
+  aside .fa {
+    margin: 20px;
+  }
 }
 .tooltip {
   position: relative;
