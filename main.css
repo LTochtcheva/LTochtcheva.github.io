@@ -14,6 +14,7 @@ html, body, .viewport {
 ul {
   list-style: none;
   padding: 0;
+  margin:0;
 }
 /*-------Header--------*/
 header {
@@ -95,7 +96,7 @@ aside {
 }
 .links li{
   color: #ffffff;
-  margin: 20px;
+  margin: 15px;
 }
 aside .fa:hover {
   color: #808080;
@@ -145,14 +146,21 @@ main h2 {
   margin-top: 30px;
 }
 .projects {
-  width: 80%;
+  width: 100%;
   color: #808080;
+}
+@media screen and (min-width: 30em) {
+  .projects {
+    width: 80%;
+  }
 }
 .projects h3 {
   margin: 20px;
 }
 article {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
   box-shadow: 2px 2px #808080;
   justify-content: space-between;
@@ -161,23 +169,48 @@ article {
   border-color: #f7ca45;
   border-radius: 2px;
 }
+@media screen and (min-width: 30em) {
+  article {
+    flex-direction: row;
+  }
+}
 article img {
   margin: 10px;
-  width: 40%;
-  height: 100%;
+  width: 90%;
+}
+@media screen and (min-width: 30em) {
+  article img{
+    margin: 10px;
+    width: 40%;
+  }
 }
 article p {
-  width: 50%;
+  width: 90%;
+}
+@media screen and (min-width: 30em) {
+  article p{
+    width: 50%;
+  }
 }
 .icon-bar {
-  width: 10%;
+  display: flex;
+  width: 100%;
   background-color: #f7ca45;
 }
+@media screen and (min-width: 30em) {
+  .icon-bar {
+    flex-direction: column;
+    width: 10%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .icon-bar a {
-    display: block;
     text-align: center;
     padding: 5px;
-    margin: 5px;
+    margin: 15px;
     color: white;
     font-size: 20px;
 }
