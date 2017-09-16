@@ -1,9 +1,9 @@
-/*yellow : #f7ca45, #fcd057, f7d147, ffdf57*/
-/*grey: #808080, #a9a9a9*/
-/*lightgrey: #d3d3d3, #f5f5f5, #dcdcdc, #b4b8bb, #c0c0c0*/
+/*yellow : #f7ca45*/
+/*grey: #808080*/
+/*lightgrey: #dcdcdc, alt: #d3d3d3, #f5f5f5, , #b4b8bb, #c0c0c0*/
 /*white: #ffffff */
 
-/*font-family: Heiti SC / Optima /  */
+/*font-family: Heiti SC / Optima for header  */
 
 /*-------Base--------*/
 html, body, .viewport {
@@ -19,9 +19,8 @@ ul {
 header {
   background-color: #808080;
   padding: 30px;
-  font-family: Optima;
+  font-family: Optima, serif;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-top-style: solid;
@@ -53,16 +52,14 @@ header {
 .about p {
   height: auto;
   color: #ffffff;
-  font-family: Heiti SC;
+  font-family: Heiti SC, sans-serif;
   font-size: 20px;
 }
 /*----------Main--------*/
 .content {
-  font-family: Heiti SC;
+  font-family: Heiti SC,sans-serif;
   display: flex;
   flex: 1;
-  flex-direction: row;
-  height: 100%;
 }
 /*-------Aside----------*/
 aside {
@@ -71,7 +68,7 @@ aside {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 30%;
+  width: 25%;
 }
 .links {
   margin: 50px 20px 0 20px;
@@ -132,8 +129,6 @@ main h2 {
 article {
   display: flex;
   background-color: #ffffff;
-  /*margin: 20px;
-  padding: 20px;*/
   box-shadow: 2px 2px #808080;
   justify-content: space-between;
   border-style: solid;
@@ -143,7 +138,7 @@ article {
 }
 article img {
   margin: 10px;
-  width: 30%;
+  width: 40%;
   height: 100%;
 }
 article p {
